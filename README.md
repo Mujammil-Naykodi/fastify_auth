@@ -19,7 +19,7 @@ A simple Fastify application with MongoDB for user authentication. This project 
 Open your terminal and run the following command to clone the project to your local machine:
 
 ```bash
-git clone <your-repository-url>
+git clone 
 ```
 
 ### 2. Navigate to the Project Directory
