@@ -46,15 +46,16 @@ docker-compose down
 
 ## API Endpoints
 
-(Optional) It's a good practice to document your API endpoints here.
 
 | Method | Endpoint        | Description                     |
 | :----- | :-------------- | :------------------------------ |
-| `POST` | `/api/register` | Registers a new user.           |
-| `POST` | `/api/login`    | Authenticates a user            |
+| `POST` | `/register` | Registers a new user.           |
+| `POST` | `/login`    | Authenticates a user            |
+| `GET`  | `/register`  |   Registers page               |
+| `GET`  | `/login`  |   login page              |
 
 
-
+ 
 
 
 
