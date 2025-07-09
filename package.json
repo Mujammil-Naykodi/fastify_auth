@@ -1,0 +1,31 @@
+{
+  "name": "fastify_auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mujammil-Naykodi/fastify_auth.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mujammil-Naykodi/fastify_auth/issues"
+  },
+  "homepage": "https://github.com/Mujammil-Naykodi/fastify_auth#readme",
+  "dependencies": {
+    "@fastify/formbody": "^8.0.2",
+    "@fastify/view": "^11.1.0",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.1.0",
+    "ejs": "^3.1.10",
+    "fastify": "^5.4.0",
+    "mongodb": "^6.17.0",
+    "nodemon": "^3.1.10"
+  }
+}
