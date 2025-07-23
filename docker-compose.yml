@@ -1,3 +1,4 @@
+version: '3.8'
 
 services:
   app:
@@ -5,21 +6,24 @@ services:
     ports:
       - '3000:3000'
     depends_on:
-      - mongo
+      - postgres
     env_file:
       - .env
-
-
     volumes:
       - .:/usr/src/app
     command: npm start
 
-  mongo:
-    image: mongo:6
+  postgres:
+    image: postgres:15
+    restart: always
     ports:
-      - '27017:27017'
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: ${PG_USER}
+      POSTGRES_PASSWORD: ${PG_PASSWORD}
+      POSTGRES_DB: ${PG_DATABASE}
     volumes:
-      - mongo-data:/data/db
+      - pg-data:/var/lib/postgresql/data
 
 volumes:
-  mongo-data:
+  pg-data:
