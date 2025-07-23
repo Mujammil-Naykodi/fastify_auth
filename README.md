@@ -7,7 +7,7 @@ A simple Fastify application with MongoDB for user authentication. This project 
 ##  Tech Stack
 
 - **Fastify** – Fast and low overhead web framework
-- **MongoDB** – NoSQL database for storing user data
+- **postgres** – SQL database for storing user data
 - **Docker** – Containerization
 - **Docker Compose** – Multi-container Docker apps
 
